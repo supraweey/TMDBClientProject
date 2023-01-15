@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/space_16dp"
+    android:layout_marginTop="@dimen/space_16dp"
+    app:cardCornerRadius="@dimen/space_12dp"
+    app:cardElevation="@dimen/space_08dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBackdrop"
+            android:layout_width="@dimen/space_50dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPopularTitle"
+            android:layout_width="@dimen/space_00dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/kanit_semi_bold"
+            android:maxLines="2"
+            android:textColor="@color/colorBlack212831"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBackdrop"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/full_names" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPopularDate"
+            android:layout_width="@dimen/space_00dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/space_16dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgPopularStar"
+            app:layout_constraintStart_toEndOf="@+id/imgBackdrop"
+            app:layout_constraintTop_toBottomOf="@+id/tvPopularTitle"
+            tools:text="@tools:sample/date/ddmmyy" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPopularStar"
+            android:layout_width="@dimen/space_20dp"
+            android:layout_height="@dimen/space_20dp"
+            android:layout_marginHorizontal="@dimen/space_06dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvVoteAverage"
+            app:srcCompat="@drawable/ic_star" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvVoteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_semi_bold"
+            android:textColor="@color/colorBlack212831"
+            app:layout_constraintBottom_toBottomOf="@+id/imgPopularStar"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="7.7" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,6 @@
+[versions]
+androidxPaging = "3.1.1"
+
+[libraries]
+androidx-paging-common-ktx = { group = "androidx.paging", name = "paging-common-ktx", version.ref = "androidxPaging" }
+androidx-paging-runtime-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "androidxPaging" }
