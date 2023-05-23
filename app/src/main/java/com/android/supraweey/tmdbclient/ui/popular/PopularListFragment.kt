@@ -1,9 +1,11 @@
 package com.android.supraweey.tmdbclient.ui.popular
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.supraweey.tmdbclient.R
@@ -17,12 +19,21 @@ class PopularListFragment : Fragment() {
     private val viewModel by viewModel<PopularViewModel>()
     lateinit var binding: FragmentPopularListBinding
 
-    private lateinit var linearLayoutManager: LinearLayoutManager
     private val popularAdapter: PopularAdapter by lazy {
         PopularAdapter().onClick {
             // open detail
         }
     }
+//    private val searchTextWatcher = object : SearchView.OnQueryTextListener {
+//        override fun onQueryTextSubmit(query: String?): Boolean {
+//
+//        }
+//
+//        override fun onQueryTextChange(newText: String?): Boolean {
+//
+//        }
+//
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,15 +48,7 @@ class PopularListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel.executePopular(MovieBody(getString(R.string.api_key), 1))
         binding.loading.visibility = View.VISIBLE
-        setUpRecyclerView()
         onObserve()
-    }
-
-    private fun setUpRecyclerView() {
-        linearLayoutManager = LinearLayoutManager(requireContext())
-        binding.rvPopular.apply {
-            layoutManager = linearLayoutManager
-        }
     }
 
     private fun initAdapter() {

@@ -10,4 +10,10 @@
     <style name="Base.Widget.AppCompat.ProgressBar.Gray">
         <item name="colorAccent">@color/colorGrayD1D1D1</item>
     </style>
+
+    <style name="ServiceSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="colorControlActivated">@color/teal_700</item>
+        <item name="android:fontFamily">@font/kanit_regular</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+    </style>
 </resources>

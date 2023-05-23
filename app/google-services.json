@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061923477884",
+    "project_id": "tmdbclient-ba441",
+    "storage_bucket": "tmdbclient-ba441.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061923477884:android:446ee19a49e94da482acf9",
+        "android_client_info": {
+          "package_name": "com.android.supraweey.tmdbclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061923477884-8nffm2ubsf97nbu3tu73rjr47ufnglu5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGd0vSKlQ-Vp2DkHhDSkWmbhgmc-frTvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061923477884-8nffm2ubsf97nbu3tu73rjr47ufnglu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

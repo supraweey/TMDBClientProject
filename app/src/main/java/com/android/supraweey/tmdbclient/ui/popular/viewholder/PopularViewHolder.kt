@@ -1,10 +1,12 @@
 package com.android.supraweey.tmdbclient.ui.popular.viewholder
 
+import android.R
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.android.supraweey.tmdbclient.databinding.ItemPopularBinding
 import com.android.supraweey.tmdbclient.domain.IMG_W500
 import com.android.supraweey.tmdbclient.domain.MovieItem
 import com.bumptech.glide.Glide
+
 
 class PopularViewHolder(var view: ItemPopularBinding):ViewHolder(view.root) {
     var onClick:(movieItem: MovieItem) -> Unit = {}
