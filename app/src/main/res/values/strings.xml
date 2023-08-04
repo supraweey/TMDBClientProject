@@ -2,4 +2,7 @@
     <string name="app_name">TMDBClient</string>
     <string name="api_key">355f6974adc97c0a921460912410fc00</string>
     <string name="popular_list_title">Popular Movies</string>
+
+    <string name="error_an_error_occur">An error occur</string>
+    <string name="error_id_not_exist">ID doesn\'t exist</string>
 </resources>

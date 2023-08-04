@@ -18,7 +18,7 @@
         android:theme="@style/Theme.TMDBClient"
         tools:targetApi="31">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.PopularActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -33,6 +33,7 @@
         </activity>
         <activity
             android:name=".ui.SchemeActivity"
+            android:launchMode="singleTask"
             android:exported="true">
             <intent-filter android:label="DeepLink">
                 <action android:name="android.intent.action.VIEW" />

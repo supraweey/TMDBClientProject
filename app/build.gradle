@@ -76,16 +76,17 @@ dependencies {
 
     implementation "com.github.hadilq:live-event:1.3.0"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
-    implementation("androidx.work:work-runtime:$versions.work_manager_version")
-    implementation("androidx.work:work-runtime-ktx:$versions.work_manager_version")
+    implementation "androidx.work:work-runtime:$versions.work_manager_version"
+    implementation "androidx.work:work-runtime-ktx:$versions.work_manager_version"
 
     // UI
     implementation 'com.github.bumptech.glide:glide:4.14.2'
 
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
 
-    implementation "androidx.paging:paging-runtime:$paging_version"
-    testImplementation("androidx.paging:paging-common:$paging_version")
+    implementation "androidx.paging:paging-runtime-ktx:$versions.paging_version"
+    implementation "androidx.paging:paging-common-ktx:$versions.paging_version"
 }

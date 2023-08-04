@@ -13,10 +13,9 @@ class MovieDataRepositoryImpl(
     private val networkable: Networkable,
     private val service: MovieDataService
 ) : MovieDataRepository {
-    override fun getMoviePopular(request: MovieBody): Flow<MovieResultItem> =
+    override fun getMoviePopular(page: Int): Flow<MovieResultItem> =
         object : BaseService<MovieResponse, MovieResultItem>(networkable) {
-            override suspend fun callApi(): MovieResponse = request.mapToData()
-                .let { service.getMoviePopular(it.apiKey ?: "", it.page ?: 1) }
+            override suspend fun callApi(): MovieResponse = service.getMoviePopular("355f6974adc97c0a921460912410fc00", page ?: 1)
 
             override fun mapper(from: MovieResponse): MovieResultItem = from.mapToDomain()
 

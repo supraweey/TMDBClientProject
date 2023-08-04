@@ -1,7 +1,6 @@
 package com.android.supraweey.tmdbclient.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
@@ -9,7 +8,7 @@ import androidx.navigation.findNavController
 import com.android.supraweey.tmdbclient.R
 import com.android.supraweey.tmdbclient.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class PopularActivity : AppCompatActivity() {
     //    private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     private lateinit var binding: ActivityMainBinding
     private val navController: NavController

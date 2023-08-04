@@ -5,5 +5,5 @@ import com.android.supraweey.tmdbclient.domain.MovieResultItem
 import kotlinx.coroutines.flow.Flow
 
 interface MovieDataRepository{
-    fun getMoviePopular(request: MovieBody): Flow<MovieResultItem>
+    fun getMoviePopular(page: Int): Flow<MovieResultItem>
 }
