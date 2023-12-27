@@ -2,14 +2,10 @@ package com.android.supraweey.tmdbclient
 
 import android.os.Build
 import androidx.annotation.RequiresApi
-import com.android.supraweey.tmdbclient.data.MovieDataRepositoryImpl
 import com.android.supraweey.tmdbclient.data.MovieDataService
-import com.android.supraweey.tmdbclient.domain.MovieDataRepository
-import com.android.supraweey.tmdbclient.domain.MoviePopularUseCase
 import com.android.supraweey.tmdbclient.network.NetworkManager
 import com.android.supraweey.tmdbclient.network.Networkable
 import com.android.supraweey.tmdbclient.service.MovieHttpClient
-import com.android.supraweey.tmdbclient.ui.popular.PopularViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.qualifier.named
